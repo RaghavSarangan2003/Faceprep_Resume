@@ -1,0 +1,86 @@
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #f0f2f5;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.19);
+  height: 470px;
+  padding: 30px;
+}
+.name{
+  align-items: center;
+  font-size: 100px;
+}
+.photo{
+  border-radius: 6px;
+  justify-content: flex-end;
+  max-width: 100%;
+  height: 75%;
+}
+.name> ul{
+  font-size: 20px;
+  margin-top: 50px;
+  padding: 0px;
+  list-style: none;
+}
+.details > li{
+  margin-top: 25px;
+}
+.grid-container{
+  padding: 20px;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  gap: 15px
+}
+.grid-item{
+  padding: 10px;
+  background-color: #f0f2f5;
+  border-radius: 6px;
+}
+.grid-item:hover{
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
+}
+.heading{
+  color: rgb(255, 68, 0);
+  text-decoration: underline;
+}
+
+.grid-item > p{
+  font-size: 20px;
+  font-weight: 400;
+}
+.grid-container-list{
+  margin: 0;
+  font-size: 20px;
+  list-style: none;
+}
+.grid-container-list > li{
+  margin-top: 7px;
+}
+.grid-container-list li::before{
+  content: "•";
+  color: rgb(255, 68, 0);
+  margin-left: -1em;
+  margin-right: 1em;
+  font-weight: bold;
+}
+.education-grid{
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+.education-grid-item{
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.education-grid-item > span{
+  font-weight: bold;
+}
